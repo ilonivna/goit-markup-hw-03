@@ -19,8 +19,8 @@ ul {
     padding-left: 15px;
     padding-right: 15px;
     display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
+    margin: 0 auto;
+    padding: 0 15px 0 15px;
 }
 
 img {
@@ -55,21 +55,12 @@ ul {
 
 .nav-container {
     display: flex;
-    flex-direction: row;
-    max-width: 261;
-    justify-content: space-between;
-    gap: 40px;
+    align-items: center;
 }
 
 .nav-list {
     display: flex;
     flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-    padding-top: 5px;
-    padding-bottom: 6px;
-    margin-top: 24px;
-    margin-bottom: 24px;
     gap: 40px;
 }
 
@@ -82,12 +73,7 @@ ul {
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: #4D5AE5;
-    display: flex;
-    flex-direction: row;
-    padding-top: 5px;
-    padding-bottom: 6px;
-    margin-top: 24px;
-    margin-bottom: 24px;
+    margin-right: 76px;
 }
 
 .logo-studio {
@@ -99,6 +85,7 @@ ul {
     font-weight: 500;
     line-height: 1.5;
     letter-spacing: 0.02em;
+    padding: 24px 0;
 }
 
 .nav-list-item:hover,
@@ -117,8 +104,6 @@ ul {
 .contacts-list {
     display: flex;
     flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
     padding-top: 5px;
     padding-bottom: 6px;
     margin-top: 24px;
