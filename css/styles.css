@@ -20,7 +20,6 @@ ul {
     padding-right: 15px;
     display: flex;
     margin: 0 auto;
-    padding: 0 15px 0 15px;
 }
 
 img {
@@ -48,12 +47,11 @@ ul {
 .container-menu {
     background-color: FFFFFF;
     border-bottom: 1px solid #E7E9FC;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
+    width: 1158px;
 }
 
 .nav-container {
+    width: 1158px;
     display: flex;
     align-items: center;
 }
@@ -104,10 +102,7 @@ ul {
 .contacts-list {
     display: flex;
     flex-direction: row;
-    padding-top: 5px;
-    padding-bottom: 6px;
-    margin-top: 24px;
-    margin-bottom: 24px;
+    align-items: center;
     gap: 40px;
 }
 
@@ -126,10 +121,11 @@ ul {
 
 
 
-.container-tagline {
+.section-tagline {
 
     background-color: #2E2F42;
     text-align: center;
+    padding: 188px 0;
 }
 
 h1 {
@@ -140,14 +136,11 @@ h1 {
     letter-spacing: 0.02em;
     color: #FFFFFF;
     padding-bottom: 48px;
-    margin-right: 472px;
-    margin-left: 472px;
-    width: 496px;
-
-
+    max-width: 496px;
 }   
+
 .order-service-button {
-    width: 169px;
+    min-width: 169px;
     height: 56px;
     background-color: #4D5AE5;
     font-family: "Roboto", sans-serif;
@@ -157,7 +150,6 @@ h1 {
     letter-spacing: 0.04em;
     color: #FFFFFF;
     cursor: pointer;
-    padding: 16px, 32px, 16px, 32px;
     border-radius: 4px;
     border: none;
 }
@@ -168,10 +160,9 @@ h1 {
 }
 
 /* Benefits */
-.container-benefits {
-    width: 1148px;
-    margin-right: 156px;
-    margin-left: 156px;
+.section-benefits {
+    width: 1158px;
+    padding: 120px 0;
     background-color: #FFFFFF;
 }
 
@@ -182,7 +173,7 @@ h1 {
 }
 
 .benefits-list-item {
-    width: 264px;
+    width: calc((100% - 3 * 24px) / 4);
 }
 
 .visually-hidden {
@@ -204,7 +195,7 @@ h1 {
     font-size: 20px;
     line-height: 1.2;
     letter-spacing: 0.02em;
-    padding-bottom: 8px;
+    margin-bottom: 8px;
 }
 
 .blist-item-text {
@@ -216,17 +207,18 @@ h1 {
 
 
 /* Our Team */
-.container-team {
+.section-team {
     display: flex;
     flex-direction: column;
     background-color: #f4f4fd;
     align-items: center;
+    padding: 120px 0
 }
 
 .team-list {
     display: flex;
     flex-direction: row;
-    gap: 32px;
+    gap: 24px;
 }
 
 .team-title {
@@ -243,27 +235,27 @@ h1 {
     background-color: #FFFFFF;
     border-radius: 0px 0px 4px 4px;
     padding-bottom: 32px;
-    text-align: center;
     box-shadow: 1px 1px 6px rgba(46, 47, 66, 0.16);
-    
-
+    width: calc((100% - 3 * 24px) / 4);
 }
 
-.team-list-item>img {
-    margin-bottom: 32px;
+.tlist-item-container {
+    padding: 32px 0;
 }
+
 
 .tlist-item-title {
-    padding-bottom: 8px;
+    text-align: center;
+    margin-bottom: 8px;
 }
 
 /* Our portfolio */
 
-.container-portfolio {
+.section-portfolio {
     display: flexbox;
     flex-direction: column;
-    margin-right: 156px;
-    margin-left:  156px;
+    padding-top: 120px;
+    padding-bottom: 120px;
     background-color: #FCFCFC;
 }
 
@@ -282,11 +274,17 @@ h1 {
     display: flex;
     flex-wrap: wrap;
     gap: 24px;
-    
+    row-gap: 48px;
 }
 
 .portfolio-list-item {
-    width: calc(100%-2*24px)/3;
+    width: calc(100% - 48px) / 3;
+}
+
+.plist-item-container {
+    padding: 32px 16px;
+    border: 1px solid #e7e9fc;
+    border-top: none;
 }
 
 .plist-item-title {
@@ -295,20 +293,14 @@ h1 {
     line-height: 1.2;
     letter-spacing: 0.02em;
     color: #2E2F42;
-    padding-top: 32px;
-    padding-bottom: 8px;
-    padding-left: 16px;
+    margin-bottom: 8px;
 }
 
 .plist-item-text {
     padding-bottom: 32px;
     padding-left: 16px;
 }
-.portfolio-list-item:not(img) {
-    border-left: 1px solid #E7E9FC;
-    border-right: 1px solid #E7E9FC;
-    border-bottom: 1px solid #E7E9FC;
-}
+
 
 
 
@@ -318,7 +310,7 @@ h1 {
     background-color: #2E2F42;
     padding-top: 100px;
     padding-bottom: 100px;
-    padding-left: 156px;
+
 }
 
 .logo-link {
@@ -329,6 +321,8 @@ h1 {
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: #4D5AE5;
+    display: inline-block;
+    margin-bottom: 16px;
 }
 
 .logo-studio-footer {
@@ -340,6 +334,6 @@ h1 {
     color: #F4F4FD;
     line-height: 1.5;
     letter-spacing: 0.02em;
-    width: 264px;
-    margin-top: 16px;
+    max-width: 264px;
+
 }
