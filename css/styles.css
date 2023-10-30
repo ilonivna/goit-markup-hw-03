@@ -36,20 +36,17 @@ ul {
     padding-left: 0;
 }
 
-.section {
-    padding-top: 120px;
-    padding-bottom: 120px;
-    }
-
 /* Menu navigation */
 
 .container-menu {
     background-color: FFFFFF;
     border-bottom: 1px solid #E7E9FC;
     width: 1158px;
-    display: flex;
 }
 
+.header-container {
+    display: flex;
+}
 .nav-container {
     width: 1158px;
     display: flex;
