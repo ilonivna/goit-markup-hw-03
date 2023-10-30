@@ -47,6 +47,7 @@ ul {
     background-color: FFFFFF;
     border-bottom: 1px solid #E7E9FC;
     width: 1158px;
+    display: flex;
 }
 
 .nav-container {
@@ -151,6 +152,7 @@ h1 {
     cursor: pointer;
     border-radius: 4px;
     border: none;
+    display: block;
 }
 
 .order-service-button:hover,
@@ -325,7 +327,6 @@ width: calc((100% - 48px) / 3);
 }
 
 .logo-studio-footer {
-    display: inline-block;
     color: #F4F4FD;
     text-transform: uppercase;
 }
