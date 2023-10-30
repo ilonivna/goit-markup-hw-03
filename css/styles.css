@@ -44,9 +44,10 @@ ul {
     width: 1158px;
 }
 
-.header-container {
+.container-header {
     display: flex;
 }
+
 .nav-container {
     width: 1158px;
     display: flex;
